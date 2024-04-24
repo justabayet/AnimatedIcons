@@ -1,0 +1,42 @@
+{
+  "name": "animated-icons",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc --p ./tsconfig-build.json && vite build",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "sideEffects": [
+    "**/*.gif"
+  ],
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vite-plugin-dts": "^3.9.0"
+  },
+  "engines": {
+    "npm": ">=9.0.0",
+    "node": ">=20.0.0"
+  }
+}
