@@ -1,9 +1,41 @@
-import SwipeVertical from './SwipeVertical'
-import SwipeHorizontal from './SwipeHorizontal'
-import ClickOneFinger from './ClickOneFinger'
+import { 
+  SwipeHorizontalBigDark,
+  SwipeHorizontalBigLight,
+  SwipeHorizontalSmallDark,
+  SwipeHorizontalSmallLight 
+} from './SwipeHorizontal'
 
 export {
-  SwipeHorizontal,
-  SwipeVertical,
-  ClickOneFinger
+  SwipeHorizontalBigDark,
+  SwipeHorizontalBigLight,
+  SwipeHorizontalSmallDark,
+  SwipeHorizontalSmallLight
+}
+
+import { 
+  SwipeVerticalBigDark,
+  SwipeVerticalBigLight,
+  SwipeVerticalSmallDark,
+  SwipeVerticalSmallLight 
+} from './SwipeVertical'
+
+export {
+  SwipeVerticalBigDark,
+  SwipeVerticalBigLight,
+  SwipeVerticalSmallDark,
+  SwipeVerticalSmallLight
+}
+
+import { 
+  ClickOneFingerBigDark,
+  ClickOneFingerBigLight,
+  ClickOneFingerSmallDark,
+  ClickOneFingerSmallLight 
+} from './ClickOneFinger'
+
+export {
+  ClickOneFingerBigDark,
+  ClickOneFingerBigLight,
+  ClickOneFingerSmallDark,
+  ClickOneFingerSmallLight
 }

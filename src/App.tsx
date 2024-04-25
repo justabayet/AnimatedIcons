@@ -1,10 +1,12 @@
 import { PropsWithChildren } from "react"
-import { ClickOneFinger, SwipeHorizontal, SwipeVertical } from "../lib/main"
+import { ClickOneFingerBigDark, ClickOneFingerBigLight, ClickOneFingerSmallDark, ClickOneFingerSmallLight } from "../lib/ClickOneFinger"
+import { SwipeHorizontalBigDark, SwipeHorizontalBigLight, SwipeHorizontalSmallDark, SwipeHorizontalSmallLight } from "../lib/SwipeHorizontal"
+import { SwipeVerticalBigDark, SwipeVerticalBigLight, SwipeVerticalSmallDark, SwipeVerticalSmallLight } from "../lib/SwipeVertical"
 
 function Row({ children, isDark = false }: PropsWithChildren & { isDark?: boolean }): JSX.Element {
   return (
     <div style={{
-      backgroundColor: isDark ? "#FFF" : "#000",
+      backgroundColor: isDark ? "#000" : "#FFF",
       display: 'flex',
       alignItems: 'center',
       justifyItems: 'center'
@@ -19,30 +21,30 @@ function App(): JSX.Element {
     <div id="table">
       <h1>ClickOneFinger</h1>
       <Row isDark>
-        <ClickOneFinger />
-        <ClickOneFinger size="small" />
+        <ClickOneFingerBigLight />
+        <ClickOneFingerSmallLight />
       </Row>
       <Row>
-        <ClickOneFinger theme="light" />
-        <ClickOneFinger size="small" theme="light" />
+        <ClickOneFingerBigDark />
+        <ClickOneFingerSmallDark />
       </Row>
       <h1>SwipeHorizontal</h1>
       <Row isDark>
-        <SwipeHorizontal />
-        <SwipeHorizontal size="small" />
+        <SwipeHorizontalBigLight />
+        <SwipeHorizontalSmallLight />
       </Row>
       <Row>
-        <SwipeHorizontal theme="light" />
-        <SwipeHorizontal size="small" theme="light" />
+        <SwipeHorizontalBigDark />
+        <SwipeHorizontalSmallDark />
       </Row>
       <h1>SwipeVertical</h1>
       <Row isDark>
-        <SwipeVertical />
-        <SwipeVertical size="small" />
+        <SwipeVerticalBigLight />
+        <SwipeVerticalSmallLight />
       </Row>
       <Row>
-        <SwipeVertical theme="light" />
-        <SwipeVertical size="small" theme="light" />
+        <SwipeVerticalBigDark />
+        <SwipeVerticalSmallDark />
       </Row>
     </div>
   )
