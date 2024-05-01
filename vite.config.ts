@@ -1,9 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { resolve } from 'path'
+import { extname, relative, resolve } from 'path'
+import { fileURLToPath } from 'node:url'
 import dts from 'vite-plugin-dts'
+import { glob } from 'glob'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),
@@ -16,6 +17,15 @@ export default defineConfig({
     },
     rollupOptions: {
       external: ['react', 'react/jsx-runtime'],
+      input: Object.fromEntries(
+        glob.sync('lib/**/*.{ts,tsx}').map(file => [
+          relative(
+            'lib',
+            file.slice(0, file.length - extname(file).length)
+          ),
+          fileURLToPath(new URL(file, import.meta.url))
+        ])
+      ),
       output: {
         entryFileNames: '[name].js',
       }
