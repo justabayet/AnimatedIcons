@@ -1,11 +1,4 @@
-import SwipeVerticalBigDark from './SwipeVerticalBigDark'
-import SwipeVerticalBigLight from './SwipeVerticalBigLight'
-import SwipeVerticalSmallLight from './SwipeVerticalSmallLight'
-import SwipeVerticalSmallDark from './SwipeVerticalSmallDark'
-
-export {
-  SwipeVerticalBigDark,
-  SwipeVerticalBigLight,
-  SwipeVerticalSmallDark,
-  SwipeVerticalSmallLight
-}
+export { default as SwipeVerticalBigDark } from './SwipeVerticalBigDark'
+export { default as SwipeVerticalBigLight } from './SwipeVerticalBigLight'
+export { default as SwipeVerticalSmallDark } from './SwipeVerticalSmallDark'
+export { default as SwipeVerticalSmallLight } from './SwipeVerticalSmallLight'

@@ -1,11 +1,4 @@
-import SwipeHorizontalBigDark from './SwipeHorizontalBigDark'
-import SwipeHorizontalBigLight from './SwipeHorizontalBigLight'
-import SwipeHorizontalSmallLight from './SwipeHorizontalSmallLight'
-import SwipeHorizontalSmallDark from './SwipeHorizontalSmallDark'
-
-export {
-  SwipeHorizontalBigDark,
-  SwipeHorizontalBigLight,
-  SwipeHorizontalSmallDark,
-  SwipeHorizontalSmallLight
-}
+export { default as SwipeHorizontalBigDark } from './SwipeHorizontalBigDark'
+export { default as SwipeHorizontalBigLight } from './SwipeHorizontalBigLight'
+export { default as SwipeHorizontalSmallDark } from './SwipeHorizontalSmallDark'
+export { default as SwipeHorizontalSmallLight } from './SwipeHorizontalSmallLight'

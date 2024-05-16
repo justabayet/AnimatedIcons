@@ -1,11 +1,4 @@
-import ClickOneFingerBigDark from './ClickOneFingerBigDark'
-import ClickOneFingerBigLight from './ClickOneFingerBigLight'
-import ClickOneFingerSmallLight from './ClickOneFingerSmallLight'
-import ClickOneFingerSmallDark from './ClickOneFingerSmallDark'
-
-export {
-  ClickOneFingerBigDark,
-  ClickOneFingerBigLight,
-  ClickOneFingerSmallDark,
-  ClickOneFingerSmallLight
-}
+export { default as ClickOneFingerBigDark } from './ClickOneFingerBigDark'
+export { default as ClickOneFingerBigLight } from './ClickOneFingerBigLight'
+export { default as ClickOneFingerSmallDark } from './ClickOneFingerSmallDark'
+export { default as ClickOneFingerSmallLight } from './ClickOneFingerSmallLight'
